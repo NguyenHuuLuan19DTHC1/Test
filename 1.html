@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Tạo link icon button</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        #wrapper {
+            background: #23292D;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 3rem;
+        }
+        a.button{
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f5f5f5;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.25s ease;
+        }
+        a.button.messenger{
+            background: #0099FF;
+            color: #fff;
+        }
+        a.button.messenger:hover{
+            background: #097ac5;
+        }
+        a.button.youtube{
+            background: #CD201F;
+            color: #fff;
+        }
+        a.button.youtube:hover{
+            background: #961919;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Tạo link icon button css</h1>
+        <div class="list-button">
+            <a href="#" class="button messenger">
+                <span class="button-icon">
+                    <i class="fab fa-facebook-messenger"></i>
+                </span>
+                <span class="button-text">
+                    Chat ngay
+                </span>
+            </a>
+            <a href="#" class="button youtube">
+                <span class="button-icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span class="button-text">
+                    Chat ngay
+                </span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
